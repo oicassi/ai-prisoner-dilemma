@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2019",
+		"module": "commonjs",
+		"outDir": "dist",
+		"rootDir": "src",
+		"strict": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["*"],
+			"@driver/*": ["adapter/driver/*"],
+			"@driven/*": ["adapter/driven/*"],
+			"@domain/*": ["domain/*"],
+			"@utils/*": ["utils/*"],
+			"@errors/*": ["errors/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}

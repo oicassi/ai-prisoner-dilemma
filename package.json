@@ -1,0 +1,36 @@
+{
+	"name": "ai-prisoner-dilemma",
+	"version": "1.0.0",
+	"description": "Project to test how LLMs behave in the prisoner's dilemma game",
+	"main": "index.js",
+	"scripts": {
+		"dev": "ts-node -r tsconfig-paths/register src/index.ts",
+		"build": "tsc && tsc-alias",
+		"start": "node dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/oicassi/ai-prisoner-dilemma.git"
+	},
+	"keywords": [
+		"ai",
+		"llm"
+	],
+	"author": "Cassiano Kruchelski Vidal",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/oicassi/ai-prisoner-dilemma/issues"
+	},
+	"homepage": "https://github.com/oicassi/ai-prisoner-dilemma#readme",
+	"devDependencies": {
+		"@types/node": "^24.0.10",
+		"prettier": "^3.6.2",
+		"ts-node": "^10.9.2",
+		"tsc-alias": "^1.8.8",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"dotenv": "^17.0.1"
+	}
+}

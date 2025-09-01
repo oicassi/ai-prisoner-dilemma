@@ -61,7 +61,3 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/
-
-# Reports
-reports/*.png
-reports/**/*.png

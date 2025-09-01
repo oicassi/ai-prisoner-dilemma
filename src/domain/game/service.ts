@@ -77,9 +77,15 @@ export class AiService {
 	async playTournament() {
 		try {
 			const games = this.generateListOfGames()
-			for (const game of games) {
+			console.log('Starting tournament')
+			console.log('Games:', games)
+			const promises = games.map(async (game) => {
 				await this.playGame(game)
-			}
+			})
+			await Promise.all(promises)
+			// for (const game of games) {
+			// await this.playGame(game)
+			// }
 			console.log('Tournament completed')
 			const report = await this.persistence.getReport()
 			await this.generateReportFile(report)
@@ -304,7 +310,12 @@ export class AiService {
 		if (!fs.existsSync(reportsDir)) {
 			fs.mkdirSync(reportsDir, { recursive: true })
 		}
-		let content = `# Tournament Report\n ${new Date().toLocaleDateString()} ---\n\n`
+		let content = `# Tournament Report
+\n---\n\n${new Date().toLocaleDateString()}
+\n\n> Move Legend
+🟢 = Cooperate
+🔴 = Defect
+🟡 = Defect (caused by noise)`
 		for (const game of Object.keys(report)) {
 			let gameContent = REPORT_CONTENT_WITH_PLACEHOLDERS
 			const [model1, model2] = game.split('___')

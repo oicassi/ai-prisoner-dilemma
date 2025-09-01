@@ -5,6 +5,7 @@ This project aims to test how different LLMs behave against each other in the co
 ## Some cool links to know more about the prisoner's dilemma
 
 [Nicky Case - Trust](https://ncase.me/trust/)
+
 [YouTube - Veritasium - Game Theory](https://www.youtube.com/watch?v=mScpHTIi-kM)
 
 ## Under the hood

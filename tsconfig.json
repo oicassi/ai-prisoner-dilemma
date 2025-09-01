@@ -11,11 +11,9 @@
 		"baseUrl": "src",
 		"paths": {
 			"@/*": ["*"],
-			"@driver/*": ["adapter/driver/*"],
 			"@driven/*": ["adapter/driven/*"],
 			"@domain/*": ["domain/*"],
-			"@utils/*": ["utils/*"],
-			"@errors/*": ["errors/*"]
+			"@utils/*": ["utils/*"]
 		}
 	},
 	"include": ["src"],

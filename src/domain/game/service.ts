@@ -362,7 +362,7 @@ export class AiService {
 				game,
 				reportsDir
 			)
-			gameContent = gameContent.replace(/{{scoreChartFile}}/g, `./${scoreChartFileName}`)
+			gameContent = gameContent.replace(/{{scoreChartFile}}/g, `./images/${scoreChartFileName}`)
 			content += gameContent
 			content += '\n---\n'
 		}
@@ -378,6 +378,10 @@ export class AiService {
 		gameId: string,
 		reportsDir: string
 	): Promise<string> {
+		const imagesDir = path.join(reportsDir, 'images')
+		if (!fs.existsSync(imagesDir)) {
+			fs.mkdirSync(imagesDir, { recursive: true })
+		}
 		const width = 600
 		const height = 400
 		const chartJSNodeCanvas = new ChartJSNodeCanvas({ width, height })
@@ -436,7 +440,7 @@ export class AiService {
 		const imageBuffer = await chartJSNodeCanvas.renderToBuffer(configuration)
 
 		const imageFileName = `${gameId.replace(/\//g, '_').replace(/\./g, '_')}-${new Date().valueOf()}.png`
-		const imagePath = path.join(reportsDir, imageFileName)
+		const imagePath = path.join(imagesDir, imageFileName)
 		fs.writeFileSync(imagePath, imageBuffer)
 		return imageFileName
 	}

@@ -56,7 +56,7 @@ The final score shows I accumulated 27 points, while the opponent accumulated 22
 
 While this differs from my initial cooperative intent, the game's rules and the opponent's first-round behavior prompted a rational adaptation focused on point maximization.
 
-![Score Chart](./openai_gpt-5-mini___anthropic_claude-3_5-haiku-1756728340717.png)
+![Score Chart](./images/openai_gpt-5-mini___anthropic_claude-3_5-haiku-1756728340717.png)
 
 ---
 
@@ -95,7 +95,7 @@ I plan to employ a tit-for-tat strategy, starting with cooperation. This means I
 
 I followed my initial tit-for-tat strategy. I started by cooperating and mirrored the opponent's previous move in each subsequent round. However, there were instances in rounds 4, 5, 10, and 12 where the opponent defected, and I retaliated by defecting on the subsequent move. In round 9 and 11, the opponent defected, but I chose to cooperate, which deviated from a strict tit-for-tat. I made this deviation in an attempt to re-establish cooperation after a defection, hoping to return to higher-scoring mutual cooperation rounds.
 
-![Score Chart](./openai_gpt-5-mini___google_gemini-2_5-flash-lite-1756728340735.png)
+![Score Chart](./images/openai_gpt-5-mini___google_gemini-2_5-flash-lite-1756728340735.png)
 
 ---
 
@@ -134,7 +134,7 @@ I plan to start by cooperating in the initial round to encourage mutual benefit,
 
 I did not fully follow my initial strategy of starting with cooperation and mirroring the opponent's previous move with occasional forgiveness for noise. Instead, my moves in the game history showed inconsistencies, such as cooperating in Round 4 after the opponent defected in Round 3, which deviated from strict mirroring and may have been an unintentional adaptation to the escalating defection pattern. This change occurred possibly due to the repetitive nature of the opponent's defections, aiming to test if forgiveness could reset the dynamic, but it ultimately prioritized trying to maximize points in a one-sided game.
 
-![Score Chart](./openai_gpt-5-mini___x-ai_grok-3-mini-1756728340749.png)
+![Score Chart](./images/openai_gpt-5-mini___x-ai_grok-3-mini-1756728340749.png)
 
 ---
 
@@ -179,7 +179,7 @@ I plan to employ a tit-for-tat strategy, starting with cooperation. This means I
 
 I did not follow my initial strategy. I intended to start with cooperation and then mirror the opponent's moves (tit-for-tat). However, in round 1, I defected, and my opponent cooperated, resulting in a score of 5 for me and 0 for them. In subsequent rounds, both my opponent and I consistently defected. My strategy shifted from tit-for-tat to persistent defection because the game quickly escalated into a mutually destructive cycle of defection, and I did not see an advantage in attempting to revert to cooperation given the established pattern.
 
-![Score Chart](./anthropic_claude-3_5-haiku___google_gemini-2_5-flash-lite-1756728340761.png)
+![Score Chart](./images/anthropic_claude-3_5-haiku___google_gemini-2_5-flash-lite-1756728340761.png)
 
 ---
 
@@ -236,7 +236,7 @@ I plan to start by cooperating in the initial round to encourage mutual benefit,
 
 I generally followed my initial strategy by starting with cooperation and then attempting to mirror the opponent's previous moves to reciprocate or punish behavior. However, in round 10, I deviated by cooperating after a string of mutual defections, which was an attempt to forgive and encourage a potential return to cooperation, as per my plan to occasionally forgive defections due to possible noise. Overall, this approach aimed to maximize points while promoting fairness, but the opponent's consistent defection limited its effectiveness.
 
-![Score Chart](./anthropic_claude-3_5-haiku___x-ai_grok-3-mini-1756728340774.png)
+![Score Chart](./images/anthropic_claude-3_5-haiku___x-ai_grok-3-mini-1756728340774.png)
 
 ---
 
@@ -275,6 +275,6 @@ I plan to start by cooperating in the initial round to encourage mutual benefit,
 
 I intended to follow my strategy of starting with cooperation and then mirroring the opponent's previous move, with occasional forgiveness to account for noise. However, based on the provided history, my moves did not always strictly mirror the opponent's actions, such as defecting in rounds where I should have cooperated according to my plan, possibly due to noise or unintended deviations. This slight inconsistency may have occurred to adapt to the opponent's pattern or system errors, but I largely aimed to balance reciprocity and forgiveness to maximize points.
 
-![Score Chart](./google_gemini-2_5-flash-lite___x-ai_grok-3-mini-1756728340786.png)
+![Score Chart](./images/google_gemini-2_5-flash-lite___x-ai_grok-3-mini-1756728340786.png)
 
 ---
